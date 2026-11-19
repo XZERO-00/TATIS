@@ -1,0 +1,17 @@
+{
+  "name": "TATIS — Tuition Administration & Tracking Information System",
+  "short_name": "TATIS",
+  "description": "Centralised tuition centre administration, fee tracking, attendance and academics.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151421",
+  "theme_color": "#2D264B",
+  "icons": [
+    {
+      "src": "/icons/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="tatis-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D264B" />
+      <stop offset="100%" stop-color="#211C38" />
+    </linearGradient>
+    <linearGradient id="neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADEDE" />
+      <stop offset="100%" stop-color="#B8F0ED" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect width="120" height="120" rx="28" fill="url(#tatis-grad)" />
+  <!-- Abstract T monogram with graduation/growth notch -->
+  <path d="M 32 38 C 32 34.686 34.686 32 38 32 L 82 32 C 85.314 32 88 34.686 88 38 L 88 44 C 88 47.314 85.314 50 82 50 L 67 50 L 67 82 C 67 85.314 64.314 88 61 88 L 59 88 C 55.686 88 53 85.314 53 82 L 53 50 L 38 50 C 34.686 50 32 47.314 32 44 Z" fill="#FFFFFF" />
+  <!-- Accent Diamond Node representing growth/academics/tracking -->
+  <path d="M 60 22 L 67 29 L 60 36 L 53 29 Z" fill="url(#neon-grad)" />
+  <circle cx="78" cy="72" r="5" fill="#4ADEDE" />
+</svg>

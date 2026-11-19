@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base surfaces */
+    --background: 240 20% 98%; /* #F7F7FA */
+    --foreground: 246 22% 17%; /* #242236 */
+
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 246 22% 17%; /* #242236 */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 246 22% 17%;
+
+    /* Brand Primary */
+    --primary: 251 33% 22%; /* Midnight Indigo: #2D264B */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 251 33% 17%; /* Deep Indigo: #211C38 */
+
+    /* Brand Secondary */
+    --secondary: 253 19% 52%; /* Soft Indigo: #766C9C */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 240 14% 93%;
+    --muted-foreground: 246 9% 50%; /* #77758A */
+
+    /* Accent */
+    --accent: 180 70% 58%; /* Neon Sky: #4ADEDE */
+    --accent-foreground: 251 33% 17%; /* Deep Indigo */
+
+    /* Destructive */
+    --destructive: 347 77% 50%; /* #E11D48 */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 240 12% 88%;
+    --input: 240 12% 88%;
+    --ring: 251 33% 22%;
+
+    /* Radius */
+    --radius: 0.5rem;
+
+    /* Sidebar specifics */
+    --sidebar-background: 251 33% 22%; /* Midnight Indigo */
+    --sidebar-foreground: 240 20% 96%;
+    --sidebar-primary: 180 70% 58%; /* Neon Sky */
+    --sidebar-primary-foreground: 251 33% 17%;
+    --sidebar-accent: 251 33% 17%; /* Deep Indigo */
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 251 25% 30%;
+    --sidebar-ring: 180 70% 58%;
+  }
+
+  .dark {
+    /* Base surfaces */
+    --background: 245 24% 11%; /* Dark Background: #151421 */
+    --foreground: 252 25% 96%; /* Dark Mode Primary: #F4F3F8 */
+
+    --card: 247 22% 16%; /* Dark Surface: #211F30 */
+    --card-foreground: 252 25% 96%;
+
+    --popover: 247 22% 16%;
+    --popover-foreground: 252 25% 96%;
+
+    /* Brand Primary */
+    --primary: 180 70% 58%; /* Neon Sky for primary contrast in dark mode */
+    --primary-foreground: 251 33% 17%;
+    --primary-hover: 177 67% 83%; /* Muted Cyan: #B8F0ED */
+
+    /* Brand Secondary */
+    --secondary: 253 19% 52%; /* Soft Indigo: #766C9C */
+    --secondary-foreground: 252 25% 96%;
+
+    /* Muted */
+    --muted: 247 20% 21%;
+    --muted-foreground: 249 13% 69%; /* Dark Mode Secondary: #A7A4B8 */
+
+    /* Accent */
+    --accent: 180 70% 58%; /* Neon Sky */
+    --accent-foreground: 251 33% 17%;
+
+    /* Destructive */
+    --destructive: 347 77% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & Inputs */
+    --border: 247 18% 24%;
+    --input: 247 18% 24%;
+    --ring: 180 70% 58%;
+
+    /* Sidebar specifics */
+    --sidebar-background: 245 24% 9%; /* Deepest dark */
+    --sidebar-foreground: 252 25% 96%;
+    --sidebar-primary: 180 70% 58%;
+    --sidebar-primary-foreground: 251 33% 17%;
+    --sidebar-accent: 247 22% 16%;
+    --sidebar-accent-foreground: 252 25% 96%;
+    --sidebar-border: 247 18% 20%;
+    --sidebar-ring: 180 70% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.4);
+}
